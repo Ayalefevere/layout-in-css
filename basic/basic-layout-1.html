@@ -8,8 +8,29 @@
     <style>
       body {
         display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 4fr 1fr;
+        gap: 15px;
       }
       /* Doe hier jouw ding! */
+      header {
+        grid-column: 1 / -1 ;
+      }
+
+      nav {
+        grid-row: 2 / 6;
+      }
+
+      main {
+        grid-column: 2/ -1 ;
+        grid-row: 2 / 6 ;
+      }
+
+      footer { 
+        grid-column: 1 / -1;
+      }
+
+
     </style>
   </head>
   <body id="basic-layout-1">
